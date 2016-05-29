@@ -1,0 +1,24 @@
+<div>
+    <h2>Repo Dcetails</h2>
+{{error}}
+  
+    
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        
+        <th>Contributer</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+        <td><img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}} " title="{{user.name}} ">
+   </td>
+        <td>{{project.contributer}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="#/main">Back to search</a>
